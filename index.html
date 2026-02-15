@@ -54,30 +54,27 @@
             min-height: 100vh;
         }
         
-        /* Логотип — ровно по центру */
+        /* Логотип — как в первом варианте (центрирован в контейнере) */
         .main-logo {
             max-width: 300px;
             width: 100%;
             height: auto;
+            margin-bottom: 30px;      /* отступ после логотипа */
             display: block;
-            margin: 0 auto;           /* центрирование по горизонтали */
         }
         
-        /* Сообщение — чуть ниже центра */
+        /* Сообщение — сразу под логотипом */
         .message {
             font-size: 1.2rem;
             line-height: 1.6;
             max-width: 600px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-            margin-top: 50px;          /* отступ от логотипа */
-            margin-bottom: 20px;
+            margin-bottom: 40px;       /* отступ перед почтой */
         }
         
-        /* Почта — в самом низу */
+        /* Почта — под сообщением */
         .contact {
             font-size: 1.1rem;
-            margin-top: auto;            /* прижимает к низу */
-            padding-bottom: 40px;
         }
         
         .contact a {
@@ -95,28 +92,27 @@
         @media (max-width: 600px) {
             .main-logo {
                 max-width: 200px;
+                margin-bottom: 20px;
             }
             .message {
                 font-size: 1rem;
-                margin-top: 40px;
-            }
-            .contact {
-                padding-bottom: 30px;
+                padding: 0 15px;
+                margin-bottom: 30px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Логотип ровно по центру -->
+        <!-- Логотип в центре контейнера (как было в первом варианте) -->
         <img src="assets/text1.png" alt="Draupnir" class="main-logo">
         
-        <!-- Сообщение чуть ниже -->
+        <!-- Сообщение сразу под логотипом -->
         <div class="message">
             Мы откроемся совсем скоро.
         </div>
         
-        <!-- Почта внизу -->
+        <!-- Почта под сообщением -->
         <div class="contact">
             <a href="mailto:stanislawermakov@gmail.com">stanislawermakov@gmail.com</a>
         </div>
