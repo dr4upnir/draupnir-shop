@@ -54,31 +54,34 @@
             min-height: 100vh;
         }
         
-        /* Логотип по центру */
+        /* Логотип — ровно по центру */
         .main-logo {
             max-width: 300px;
             width: 100%;
             height: auto;
-            margin-bottom: 30px;     
-            display: block;          
+            display: block;
+            margin: 0 auto;           /* центрирование по горизонтали */
         }
         
+        /* Сообщение — чуть ниже центра */
         .message {
             font-size: 1.2rem;
             line-height: 1.6;
-            margin-bottom: 60px;        /* Увеличил отступ снизу */
             max-width: 600px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            margin-top: 50px;          /* отступ от логотипа */
+            margin-bottom: 20px;
         }
         
+        /* Почта — в самом низу */
         .contact {
             font-size: 1.1rem;
-            margin-top: auto;            /* Прижимает почту к низу */
-            padding-bottom: 40px;        /* Отступ от нижнего края */
+            margin-top: auto;            /* прижимает к низу */
+            padding-bottom: 40px;
         }
         
         .contact a {
-            color: white;                /* Теперь цвет как у шрифта */
+            color: white;
             text-decoration: none;
             opacity: 0.9;
         }
@@ -95,8 +98,7 @@
             }
             .message {
                 font-size: 1rem;
-                padding: 0 15px;
-                margin-bottom: 40px;
+                margin-top: 40px;
             }
             .contact {
                 padding-bottom: 30px;
@@ -106,15 +108,15 @@
 </head>
 <body>
     <div class="container">
-        <!-- Логотип -->
+        <!-- Логотип ровно по центру -->
         <img src="assets/text1.png" alt="Draupnir" class="main-logo">
         
-        <!-- Сообщение теперь выше, но с большим отступом снизу -->
+        <!-- Сообщение чуть ниже -->
         <div class="message">
             Мы откроемся совсем скоро.
         </div>
         
-        <!-- Почта в самом низу, цвет как у текста -->
+        <!-- Почта внизу -->
         <div class="contact">
             <a href="mailto:stanislawermakov@gmail.com">stanislawermakov@gmail.com</a>
         </div>
