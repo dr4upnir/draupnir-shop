@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Драупнир</title>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106841895', 'ym');
+    
+        ym(106841895, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/106841895" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    
     <style>
         * {
             margin: 0;
@@ -68,6 +83,69 @@
             max-width: 300px;
             width: 100%;
             height: auto;
+            margin-bottom: 30px;
+            display: block;
+        }
+        
+        /* Сообщение */
+        .message {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 600px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        /* Почта в самом низу */
+        .contact {
+            font-size: 1.1rem;
+            padding-bottom: 40px;
+            width: 100%;
+        }
+        
+        .contact a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+        }
+        
+        .contact a:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+        }
+        
+        /* Для мобильных */
+        @media (max-width: 600px) {
+            .main-logo {
+                max-width: 200px;
+                margin-bottom: 20px;
+            }
+            .message {
+                font-size: 1rem;
+                padding: 0 15px;
+            }
+            .contact {
+                padding-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Центральная группа: логотип + сообщение ровно посередине -->
+        <div class="center-group">
+            <img src="assets/text1.png" alt="Draupnir" class="main-logo">
+            <div class="message">
+                Мы откроемся совсем скоро.
+            </div>
+        </div>
+        
+        <!-- Почта в самом низу -->
+        <div class="contact">
+            <a href="mailto:stanislawermakov@gmail.com">stanislawermakov@gmail.com</a>
+        </div>
+    </div>
+</body>
+</html>            height: auto;
             margin-bottom: 30px;
             display: block;
         }
